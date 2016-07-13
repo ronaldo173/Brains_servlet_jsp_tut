@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class SimpleServlet
  */
-@WebServlet(description = "A simple servlet", urlPatterns = { "/SimpleServletPath" })
+@WebServlet(description = "A simple servlet", urlPatterns = { "/servlet" })
 public class SimpleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -22,9 +22,9 @@ public class SimpleServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("Hello from GET");
+		response.setContentType("text/html");
 		PrintWriter writer = response.getWriter();
-		writer.println("<h3>Hello</h3>");
+		writer.println("Bla bla");
 	}
 
 }

@@ -36,6 +36,12 @@ public class XmlServlet extends HttpServlet {
 
 		writer.println("Session name: " + session.getAttribute(attributeName));
 		writer.println("servletContext name: " + servletContext.getAttribute(attributeName));
+		writer.println("<br>");
+		writer.println("init param: " + this.getServletConfig());
+		writer.println("<br>");
+		writer.println(servletContext.getMajorVersion());
+		writer.println("<br>");
+		writer.println(servletContext.getMinorVersion());
 	}
 
 	/*

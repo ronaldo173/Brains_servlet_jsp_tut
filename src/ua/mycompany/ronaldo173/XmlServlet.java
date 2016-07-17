@@ -1,4 +1,4 @@
-package ua.mycompany.roandlo173;
+package ua.mycompany.ronaldo173;
 
 import java.io.IOException;
 import java.io.PrintWriter;

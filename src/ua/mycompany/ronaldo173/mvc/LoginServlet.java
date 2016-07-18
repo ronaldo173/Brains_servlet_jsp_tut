@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
 
 		if (isAuthenticate) {
 			User user = loginService.getUserDetails(userId);
-			System.out.println("\\n");
+			System.out.println("\n");
 			System.out.println(userId);
 			System.out.println(user);
 			// request.getSession().setAttribute("user", user);

@@ -12,16 +12,20 @@
 	<h3>Login SUCCESSFUL</h3>
 
 	<br>
-	<%
-		User user = (User) request.getAttribute("user");
-	%>
+	<jsp:useBean id="user" class="ua.mycompany.ronaldo173.mvc.dto.User"
+		scope="request">
+
+	</jsp:useBean>
 
 	Hello
-	<br>
-	User: 
+	<br> User:
 	<%=user.toString()%>
-	<br>
-	Name: 
+	<br> Name:
 	<%=user.getUserName()%>
+
+	<br>Jstl:
+	<br>
+	<jsp:getProperty property="userName" name="user" />
+	<br>
 </body>
 </html>
